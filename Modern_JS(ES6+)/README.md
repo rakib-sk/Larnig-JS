@@ -38,9 +38,9 @@ console.log(a); // 5 (unexpected behavior)
 let name = "Rakib";
 name = "Hasan"; // allowed
 // let name = "Test"; // ❌ not allowed
+```
 Block Scope Example:
-Copy code
-Js
+```js
 if (true) {
   let temp = 50;
 }
@@ -71,7 +71,7 @@ user.name = "Hasan"; // allowed
 - Avoid: var (bug তৈরি হয়)
 
 ## 5. Scope Difference Summary
-```js
+
 | Feature | var | let | const |
 | --- | --- | --- | --- |
 | Scope | Function | Block | Block |
@@ -79,7 +79,7 @@ user.name = "Hasan"; // allowed
 | Reassign | Yes | Yes | No |
 | Initialize | Optional | Optional | Required |
 | Hoisting | Yes | Yes (TDZ) | Yes (TDZ) |
-```
+
 
 ## 6. Hoisting Explained
 ```js
@@ -104,4 +104,4 @@ const c = 30;
 - var → পুরনো system, function scoped
 - let → modern, block scoped, flexible
 - const → modern, block scoped, unchangeable binding
-- 
+  
